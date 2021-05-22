@@ -1,5 +1,7 @@
-﻿namespace NBEGUI {
-    partial class NBEGUI {
+﻿namespace NBEGUI2
+{
+    partial class NBEGUI2
+    {
         /// <summary>
         /// Variável de designer necessária.
         /// </summary>
@@ -9,8 +11,10 @@
         /// Limpar os recursos que estão sendo usados.
         /// </summary>
         /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,7 +26,8 @@
         /// Método necessário para suporte ao Designer - não modifique 
         /// o conteúdo deste método com o editor de código.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -38,9 +43,9 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(12, 249);
+            this.textBox1.Location = new System.Drawing.Point(12, 498);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 20);
+            this.textBox1.Size = new System.Drawing.Size(683, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -52,7 +57,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(316, 225);
+            this.listBox1.Size = new System.Drawing.Size(683, 472);
             this.listBox1.TabIndex = 1;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -67,37 +72,39 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.DefaultExt = "All NeXaS Script Files|*bin";
+            this.openFileDialog1.DefaultExt = "bin";
+            this.openFileDialog1.Filter = "All Files|*.*";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // saveFileDialog1
             // 
-            this.saveFileDialog1.DefaultExt = "All NeXaS Script Files|*bin";
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.Filter = "All Files|*.*";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
-            // NBEGUI
+            // NBEGUI2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 281);
+            this.ClientSize = new System.Drawing.Size(707, 530);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
-            this.Name = "NBEGUI";
-            this.Text = "NBEGUI";
+            this.Name = "NBEGUI2";
+            this.Text = "NBEGUI - Script Extract Mod";
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

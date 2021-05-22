@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace NBEGUI {
+namespace NBEGUI2 {
     static class Program {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
@@ -12,7 +12,7 @@ namespace NBEGUI {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NBEGUI());
+            Application.Run(new NBEGUI2());
         }
     }
 }

@@ -1,4 +1,4 @@
-## NeXAS Bin String Editor
-[![Build Status](https://travis-ci.org/ForumHulp/pageaddon.svg?branch=master)](http://vnx.uvnworks.com)
+## NeXAS Bin String Editor GUI - String Export Mod
 
-A DLL Library tool to allow you write your own string editor in C#
+A primitive frontend for the NXSBinEditor library, modified to output raw strings instead of binary data.
+(Used to output text from baldr sky alongside zbspac.)
